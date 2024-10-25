@@ -1,18 +1,10 @@
-## Getting Started
+DesafioControleFluxo - Projeto de Controle de Fluxo com Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório contém um projeto de exemplo para exercitar conceitos de controle de fluxo em Java, utilizando loops, exceções customizadas e leitura de entrada via terminal. O objetivo é criar um sistema que recebe dois números inteiros como parâmetros e imprime uma contagem incrementada, seguindo as regras definidas.
+Descrição do Projeto
 
-## Folder Structure
+O projeto consiste em uma aplicação simples que realiza as seguintes operações:
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    Leitura de Parâmetros: O sistema solicita dois números inteiros do usuário via terminal.
+    Validação dos Parâmetros: O primeiro número deve ser menor que o segundo. Caso contrário, uma exceção personalizada é lançada.
+    Contagem e Impressão: A partir dos números informados, o sistema realiza uma contagem, imprimindo mensagens incrementadas no console.
