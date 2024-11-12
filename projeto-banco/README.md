@@ -35,7 +35,7 @@ O projeto é composto pelas seguintes classes principais:
 
 <h2>Compile os arquivos Java:</h2>
 
-cd src
+cd src<br>
 javac BancoApp.java Conta.java ContaCorrente.java ContaPoupanca.java Cliente.java
 
 <h2>Execute a aplicação:</h2>
