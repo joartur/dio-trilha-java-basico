@@ -17,7 +17,8 @@ Este repositório contém o projeto desenvolvido para o desafio de **Programaç�
 
 ## 🚀 Estrutura do Projeto
 
-src/ └── com.dio.desafio.poo/<br>
+        src/ 
+        └── com.dio.desafio.poo/<br>
         ├── model/ <br>
         │ ├── Bootcamp.java <br>
         │ ├── Curso.java <br>
