@@ -31,7 +31,7 @@ src/ └── com.dio.desafio.poo/ ├── model/ │ ├── Bootcamp.java
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/joartur/dio-trilha-java-basico/poo-desafio.git
    
 2. Importe o projeto em sua IDE de preferência.
 3. Compile e execute a classe Main.java para testar as funcionalidades.
