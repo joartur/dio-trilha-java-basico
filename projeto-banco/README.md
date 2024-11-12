@@ -30,7 +30,7 @@ O projeto é composto pelas seguintes classes principais:
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/banco-digital-java.git
+   git clone https://github.com/seu-usuario/banco-digital-java/projeto-banco.git
    cd banco-digital-java
 
 <h2>Compile os arquivos Java:</h2>
