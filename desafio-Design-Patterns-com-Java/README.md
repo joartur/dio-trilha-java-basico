@@ -1,18 +1,110 @@
-## Getting Started
+Design Patterns com Java e Spring Boot
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Descrição do Projeto
 
-## Folder Structure
+Este projeto tem como objetivo demonstrar a implementação de padrões de projeto clássicos (GoF) utilizando Java com Spring Boot. Ele foi desenvolvido para exemplificar o uso prático de padrões como Singleton, Factory Method, Observer, Strategy, e Decorator. A estrutura do projeto permite uma compreensão clara e separação dos padrões para facilitar o aprendizado e a manutenção.
 
-The workspace contains two folders by default, where:
+Estrutura do Projeto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+my-springboot-patterns-project/
+|
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   ├── mypatterns/
+│   │   │   │   │   ├── controller/
+│   │   │   │   │   │   └── PatternController.java
+│   │   │   │   │   ├── service/
+│   │   │   │   │   │   ├── FactoryService.java
+│   │   │   │   │   │   ├── SingletonService.java
+│   │   │   │   │   │   └── StrategyService.java
+│   │   │   │   │   ├── model/
+│   │   │   │   │   │   ├── Product.java
+│   │   │   │   │   │   ├── SingletonExample.java
+│   │   │   │   │   │   ├── ObserverExample.java
+│   │   │   │   │   │   └── StrategyExample.java
+│   │   │   │   │   └── util/
+│   │   │   │   │       ├── Observer.java
+│   │   │   │   │       ├── ProductFactory.java
+│   │   │   │   │       └── StrategyContext.java
+│   │   ├── resources/
+│   │   │   ├── application.properties
+│   │   │   └── static/
+│   │   └── pom.xml
+└── README.md
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Padrões Implementados
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Singleton Pattern
 
-## Dependency Management
+Descrição: Garante que uma classe tenha uma única instância e fornece um ponto global de acesso a ela.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Classe: SingletonExample.java
+
+Serviço: SingletonService.java
+
+Endpoint: /singleton
+
+Factory Method Pattern
+
+Descrição: Define uma interface para criar um objeto, mas permite que as subclasses decidam qual classe instanciar.
+
+Classe: Product.java
+
+Factory: ProductFactory.java
+
+Serviço: FactoryService.java
+
+Endpoint: /factory
+
+Observer Pattern
+
+Descrição: Define uma dependência um-para-muitos entre objetos, para que, quando um objeto mudar de estado, todos os seus dependentes sejam notificados.
+
+Classe: ObserverExample.java
+
+Utilitário: Observer.java
+
+Strategy Pattern
+
+Descrição: Define uma família de algoritmos, encapsula cada um e os torna intercambiáveis.
+
+Classe: StrategyExample.java
+
+Contexto: StrategyContext.java
+
+Serviço: StrategyService.java
+
+Endpoint: /strategy
+
+Configurações de Execução
+
+Clonar o repositório:
+
+git clone https://github.com/seu-repositorio/my-springboot-patterns-project.git
+
+Executar o projeto:
+
+cd my-springboot-patterns-project
+mvn spring-boot:run
+
+Acessar os endpoints:
+
+http://localhost:8080/singleton
+
+http://localhost:8080/factory
+
+http://localhost:8080/strategy
+
+Dependências
+
+Certifique-se de ter as seguintes dependências configuradas no pom.xml:
+
+Spring Boot Starter Web
+
+Spring Boot Starter Test
+
+Conclusão
+
+Este projeto fornece uma visão abrangente dos padrões de projeto aplicados em Java com Spring Boot. Explore cada padrão e veja como eles podem ser aplicados em soluções reais para melhorar a manutenção e a extensibilidade do código.
